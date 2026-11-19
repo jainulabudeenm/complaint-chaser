@@ -1,0 +1,37 @@
+{
+  "name": "consumer-dispute",
+  "version": "1.0.0",
+  "description": "Install the Consumer Dispute skill for Claude. Runs a refund or consumer dispute by email from start to finish, and asks you before every offer and every new step.",
+  "keywords": [
+    "claude",
+    "claude-skill",
+    "claude-code",
+    "consumer-rights",
+    "refund",
+    "customer-support",
+    "email",
+    "india"
+  ],
+  "author": "Zain Hasan",
+  "license": "MIT",
+  "bin": {
+    "consumer-dispute": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skills/consumer-dispute.skill",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jainulabudeenm/consumer-dispute.git"
+  },
+  "homepage": "https://github.com/jainulabudeenm/consumer-dispute#readme",
+  "bugs": {
+    "url": "https://github.com/jainulabudeenm/consumer-dispute/issues"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "consumer-dispute",
+  "version": "1.0.0",
+  "description": "Runs a refund or consumer dispute by email from start to finish: reads the thread and the company's own policies, writes firm grounded emails, watches the inbox, and escalates one step at a time. Never accepts an offer or types your card or ID details for you.",
+  "author": {
+    "name": "Zain",
+    "url": "https://github.com/jainulabudeenm"
+  }
+}

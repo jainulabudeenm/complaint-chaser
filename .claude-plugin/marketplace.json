@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "consumer-dispute",
+  "description": "A case handler for getting your money back.",
+  "owner": {
+    "name": "Zain",
+    "url": "https://github.com/jainulabudeenm"
+  },
+  "plugins": [
+    {
+      "name": "consumer-dispute",
+      "description": "Runs a refund dispute by email: research, firm replies, inbox watch and step-by-step escalation, with you approving every offer and every new step.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
