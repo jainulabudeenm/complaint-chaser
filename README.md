@@ -1,10 +1,11 @@
-# Consumer Dispute
+# Complaint Chaser
 
-A Claude skill that runs a refund or consumer dispute by email, from the first ask to the consumer
-court if it gets that far. It does the reading, the writing, the waiting and the follow-ups. You
+A Claude skill that chases a complaint against a company by email, from the first ask to the
+consumer court if it gets that far: a refund, a replacement, a price that went up when it should
+not have, a wrong charge, a broken product, or a service you paid for and never got. It does the reading, the writing, the waiting and the follow-ups. You
 make every decision that involves money, your identity or a new step.
 
-Most refund fights are lost to fatigue, not to policy. Support says no twice, you have a job, and
+Most of these fights are lost to fatigue, not to policy. Support says no twice, you have a job, and
 the company knows you will give up. This skill is built for that part. It keeps the thread moving
 with calm, sourced emails until the goal is met or you say stop.
 
@@ -18,14 +19,14 @@ from both are written into the skill.
 In Claude Code, as a plugin:
 
 ```
-/plugin marketplace add jainulabudeenm/consumer-dispute
-/plugin install consumer-dispute
+/plugin marketplace add jainulabudeenm/complaint-chaser
+/plugin install complaint-chaser
 ```
 
 From npm, which also covers Claude.ai and anywhere outside Claude Code:
 
 ```
-npx consumer-dispute
+npx complaint-chaser
 ```
 
 It works best with a mail connector (the Gmail connector in Claude) so it can search your inbox
@@ -35,7 +36,8 @@ and draft replies. Without one, paste the emails in and send its drafts yourself
 
 ```
 > I want my money back from this store, here is their last email
-> they refused my refund again
+> they raised my renewal price and support keeps saying no
+> they refused to replace a broken product again
 > will I get a refund for this?
 ```
 
@@ -77,8 +79,8 @@ law first and cites the source. The method carries over. The rule numbers do not
 
 ## The profile
 
-`~/.claude/consumer-dispute/profile.md`, in your home directory rather than a repo, because it holds
-your name and email addresses. See `profile.example.md` for the shape. Run `/consumer-dispute-init`
+`~/.claude/complaint-chaser/profile.md`, in your home directory rather than a repo, because it holds
+your name and email addresses. See `profile.example.md` for the shape. Run `/complaint-chaser-init`
 to change it.
 
 ## Not legal advice

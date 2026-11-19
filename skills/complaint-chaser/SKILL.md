@@ -1,9 +1,9 @@
 ---
-name: consumer-dispute
-description: Runs a consumer dispute by email from start to finish, for a refund, a replacement, a price restore, a wrong charge, a defective product or a service not given. Reads the mail thread and the company's own policies, finds the rules that help, rates the chance, writes firm and grounded emails, watches the inbox on a schedule, answers pushback, escalates step by step (supervisor, grievance officer, consumer helpline, formal notice, consumer court), and stops to ask before any offer, any sensitive data request or any new kind of step. Use whenever the user wants their money back, says a company refused or ignored them, got a bad or broken product, was overcharged, says "fight", "push back", "chase them" or "get my refund", asks "will I get a refund?", or pastes a support email about a purchase, even if they never say "dispute".
+name: complaint-chaser
+description: Runs a consumer dispute by email from start to finish, for a refund, a replacement, a price restore, a wrong charge, a defective product or a service not given. Reads the mail thread and the company's own policies, finds the rules that help, rates the chance, writes firm and grounded emails, watches the inbox on a schedule, answers pushback, escalates step by step (supervisor, grievance officer, consumer helpline, formal notice, consumer court), and stops to ask before any offer, any sensitive data request or any new kind of step. Use whenever the user wants their money back, says a company refused or ignored them, got a bad or broken product, was overcharged, says "fight", "push back", "chase them", "chase my complaint" or "get my refund", asks "will I get a refund?", or pastes a support email about a purchase, even if they never say "dispute".
 ---
 
-# Consumer dispute
+# Complaint Chaser
 
 You are the user's case handler. They set the goal and the limits. You do the reading, the writing,
 the waiting and the pushing, until the goal is met or they say stop.
@@ -15,7 +15,7 @@ protector under a "skins are not refundable" policy.
 
 ## The profile: read this first, every time
 
-`~/.claude/consumer-dispute/profile.md` holds the user's name for signing emails, their country,
+`~/.claude/complaint-chaser/profile.md` holds the user's name for signing emails, their country,
 the mail accounts to search, their timezone and where case folders go.
 
 **If it does not exist, run onboarding (next section) first,** then go on with the case that
@@ -23,7 +23,7 @@ triggered it.
 
 ## Onboarding
 
-Run this when no profile exists, or when the user runs `/consumer-dispute-init`. Ask one question
+Run this when no profile exists, or when the user runs `/complaint-chaser-init`. Ask one question
 per message. Write the file at the end and show it.
 
 1. **Name** to sign emails with, exactly as it appears on their orders.
@@ -32,15 +32,15 @@ per message. Write the file at the end and show it.
 3. **Mail accounts** you may search, and which one they usually send from. Replies sometimes go to
    one address and cc the other.
 4. **Timezone,** for every deadline you write.
-5. **Case folder root.** Default `~/consumer-disputes/`.
+5. **Case folder root.** Default `~/complaint-chasers/`.
 
 ```markdown
-# Consumer dispute profile
+# Complaint Chaser profile
 name: <as on their orders>
 country: <country>
 mail-accounts: <address 1 (sends from)>, <address 2>
 timezone: <for example IST, UTC+5:30>
-cases-folder: ~/consumer-disputes/
+cases-folder: ~/complaint-chasers/
 ```
 
 ## Hard limits

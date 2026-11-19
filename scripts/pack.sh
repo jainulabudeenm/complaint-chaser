@@ -6,7 +6,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-for name in consumer-dispute; do
+for name in complaint-chaser; do
   rm -f "skills/$name.skill"
   (cd skills && zip -qrD "$name.skill" "$name" -x '.*' -x '*/.*')
   echo "packed skills/$name.skill"

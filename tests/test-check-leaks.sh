@@ -58,7 +58,7 @@ echo "Built and maintained by Zain." >> "$R/README.md"
 assert_exit "author name in README allowed" 0 "$R"
 
 R="$(mkfixture)"
-echo "/plugin marketplace add jainulabudeenm/consumer-dispute" >> "$R/skills/demo/SKILL.md"
+echo "/plugin marketplace add jainulabudeenm/complaint-chaser" >> "$R/skills/demo/SKILL.md"
 assert_exit "github handle allowed in skill body" 0 "$R"
 
 R="$(mkfixture)"

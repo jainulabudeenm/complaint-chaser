@@ -1,25 +1,25 @@
 {
-  "name": "consumer-dispute",
+  "name": "complaint-chaser",
   "version": "1.0.0",
-  "description": "Install the Consumer Dispute skill for Claude. Runs a refund or consumer dispute by email from start to finish, and asks you before every offer and every new step.",
+  "description": "Install the Complaint Chaser skill for Claude. Chases a complaint against a company by email, from the first ask to the consumer court, and asks you before every offer and every new step.",
   "keywords": [
     "claude",
     "claude-skill",
     "claude-code",
     "consumer-rights",
+    "complaint",
     "refund",
     "customer-support",
-    "email",
     "india"
   ],
   "author": "Zain Hasan",
   "license": "MIT",
   "bin": {
-    "consumer-dispute": "bin/install.js"
+    "complaint-chaser": "bin/install.js"
   },
   "files": [
     "bin/",
-    "skills/consumer-dispute.skill",
+    "skills/complaint-chaser.skill",
     "README.md",
     "LICENSE"
   ],
@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jainulabudeenm/consumer-dispute.git"
+    "url": "git+https://github.com/jainulabudeenm/complaint-chaser.git"
   },
-  "homepage": "https://github.com/jainulabudeenm/consumer-dispute#readme",
+  "homepage": "https://github.com/jainulabudeenm/complaint-chaser#readme",
   "bugs": {
-    "url": "https://github.com/jainulabudeenm/consumer-dispute/issues"
+    "url": "https://github.com/jainulabudeenm/complaint-chaser/issues"
   }
 }
